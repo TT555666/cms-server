@@ -9,10 +9,10 @@ import { ControllersModule } from './controllers/controllers.module';
 import redisConfig from './config/redis.config';
 // import { ValidationPipe } from './pipe/validation.pipe';
 import { RedisModule } from 'nestjs-redis';
- 
+
 @Module({
   imports: [
-    //配置加载配置文件.config
+    //配置加载配置文件.config内容
     ConfigModule.load(path.resolve(__dirname, 'config', '**/!(*.d).{ts,js}'), {
       modifyConfigName: (name) => name.replace('.config', ''),
     }),

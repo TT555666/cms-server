@@ -9,7 +9,7 @@ import { ControllersModule } from './controllers/controllers.module';
 import redisConfig from './config/redis.config';
 // import { ValidationPipe } from './pipe/validation.pipe';
 import { RedisModule } from 'nestjs-redis';
-
+ 
 @Module({
   imports: [
     //配置加载配置文件.config
